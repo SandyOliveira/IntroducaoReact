@@ -1,0 +1,32 @@
+Instalar Bibliotecas
+>>yarn add @babel/preset-env @babel/preset-react webpack webpack-cli
+transformei como dependencia de Dev - package.json
+devDependencies 
+
+Instalar react
+>> yarn add react react-dom
+Instalar babel loader 
+>> yarn add babel-loader -D
+>> yarn build
+
+Biblioteca para atualizar automaticamente mesmo tendo edições
+>>yarn add webpack-dev-server -D
+
+No package.json 
+"build": "webpack --mode production",
+será utilizado para produção, rodar online (>>yarn build) 
+e "dev": "webpack-dev-server --mode development"
+pra enquanto estiver fazendo a aplicação (>>yarn dev)
+
+Importando o CSS 
+>> yarn add style-loader css-loader -D
+Importar imagens 
+>> yarn add file-loader -D
+
+Pro Babel entender class
+
+>>yarn add @babel/plugin-proposal-class-properties -D
+
+PropTypes
+
+>> yarn add prop-types
